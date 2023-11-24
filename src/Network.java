@@ -1,10 +1,25 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
 
 import static java.lang.Thread.sleep;
 
 public class Network {
+//    File file = new File("output.txt");
+//    public Network(){
+//        if (file.exists()){
+//            file.delete();
+//        } else {
+//            System.out.println("no file");
+//        }
+//    }
+
     public static void main(String[] args) throws InterruptedException {
+        File file = new File("output.txt");
+
+        if (file.exists()){
+            file.delete();
+        }
         int  numberOfConnections, numberOfDecives;
         ArrayList<Device> devices = new ArrayList<>();
 

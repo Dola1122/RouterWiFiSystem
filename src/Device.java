@@ -38,7 +38,7 @@ public class Device extends Thread {
 
     private void logToFile(String message) throws IOException {
         try {
-            FileWriter fileWriter = new FileWriter("output.txt", false);
+            FileWriter fileWriter = new FileWriter("output.txt", true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             printWriter.println(message);
