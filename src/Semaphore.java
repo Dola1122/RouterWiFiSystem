@@ -23,10 +23,10 @@ public class Semaphore {
             try {
                 FileWriter fileWriter = new FileWriter("output.txt", true);
                 PrintWriter printWriter = new PrintWriter(fileWriter);
-                
+
                 printWriter.println(device.getDeviceName() + " (" + device.getDeviceType() + ") arrived and waiting");
                 printWriter.close();
-                
+
                 wait();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -35,7 +35,7 @@ public class Semaphore {
             try {
                 FileWriter fileWriter = new FileWriter("output.txt", true);
                 PrintWriter printWriter = new PrintWriter(fileWriter);
-                
+
                 printWriter.println(device.getDeviceName() + " (" + device.getDeviceType() + ") arrived");
                 printWriter.close();
             } catch (IOException e) {

@@ -12,6 +12,8 @@ public class Network {
 
         if (file.exists()){
             file.delete();
+        } else {
+            System.out.println("no file");
         }
         int numberOfConnections, numberOfDevices;
 
@@ -40,6 +42,7 @@ public class Network {
         }
 
         for (int i = 0; i < numberOfDevices; i++) {
+            sleep(200);
             devices.get(i).start();
         }
     }
