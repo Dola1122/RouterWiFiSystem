@@ -13,6 +13,7 @@ public class Network {
             System.out.print("Enter number of WI-FI Connections: ");
             numberOfConnections = input.nextInt();
             Router router = new Router(numberOfConnections);
+            System.out.print("Enter number of devices Clients want to connect: ");
             numberOfDecives = input.nextInt();
             System.out.println("Enter device name and type");
             for (int i = 0; i < numberOfDecives; i++) {
