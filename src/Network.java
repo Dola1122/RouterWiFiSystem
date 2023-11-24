@@ -6,6 +6,7 @@ import static java.lang.Thread.sleep;
 
 public class Network {
 
+
     public static void main(String[] args) throws InterruptedException {
         File file = new File("output.txt");
 
