@@ -40,7 +40,6 @@ public class Network {
         }
 
         for (int i = 0; i < numberOfDevices; i++) {
-            sleep(100);
             devices.get(i).start();
         }
     }
